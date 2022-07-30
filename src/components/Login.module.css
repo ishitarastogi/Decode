@@ -1,0 +1,13 @@
+ .button{
+    border-radius: 4px;
+    padding: 9px 18px;
+    font-size: 14px;
+    margin-right: 50px;
+  background: -webkit-linear-gradient(#8CA6DB, #b173e0);
+  background:black linear-gradient(#1d1e20, rgb(114, 63, 196));      color: white;
+  }
+  .button:hover {
+  background-color: #071120; /* Green */
+  color: white;
+  cursor: pointer;
+}

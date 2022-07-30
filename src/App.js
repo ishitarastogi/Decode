@@ -1,55 +1,68 @@
-import React, { useState } from "react";
-import { Route, Routes, Outlet, useNavigate } from "react-router-dom";
 
+import { Route, Switch } from "react-router-dom";
+import MainNavigation from "./components/layout/MainNavigation";
+import "./App.css"
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Login from "./components/Login";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import { LensLogin } from "./components/lens/index";
-import { LandingPage, ProfilePage, PostPage } from "../src/pages/index";
-import { ENV_PROD, ENV_DEV } from "./constants";
-
+import CreateProfiles from "./pages/CreateProfile";
+import Display from "./pages/Display";
+import Docs from "./pages/Document";
+import Video from "./pages/Videos";
+import Project from "./pages/Projects";
+import Home from "./components/Home/Home";
+import MyProfile from "./pages/MyProfile";
+import Logout from "./components/logout/Logout";
 function App() {
-
   return (
-    <Routes>
-      <Route element={<AppLayout />}>
-        <Route path="/" element={<LandingPage  />} />
-        <Route path="/profile/:handle" element={<ProfilePage />} />
-        <Route path="/post" element={<PostPage  />} />
-      </Route>
-    </Routes>
+    <div className="App">
+      <header className="header">
+                <ConnectButton chainStatus="none" />
+
+        <Login className="button" />
+
+        {/* <div>
+          <FontAwesomeIcon icon="fa-solid fa-code" className="code" />
+
+          <Link to="/" className="logo">
+            Decode
+            <FontAwesomeIcon icon="fab fa-firstdraft" />
+          </Link>
+        </div> */}
+      </header>
+
+      <MainNavigation />
+
+      <Switch>
+        <Route path="/" exact={true}>
+          <Home />
+        </Route>
+
+        <Route path="/explore">
+          <Display />
+        </Route>
+        <Route path="/myProfile">
+          <MyProfile />
+        </Route>
+        <Route path="/createProfile">
+          <CreateProfiles />
+        </Route>
+        <Route path="/logout">
+          <Logout />
+        </Route>
+        <Route path="/docs">
+          <Docs />
+        </Route>
+        <Route path="/video">
+          <Video />
+        </Route>
+        <Route path="/project">
+          <Project />
+        </Route>
+      </Switch>
+    </div>
   );
 }
 
 export default App;
-
-const AppLayout = () => {
-  const navagate = useNavigate();
-  return (
-    <div className="h-screen flex flex-col">
-      <header className="flex justify-between p-4 bg-slate-500	">
-        <ConnectButton />
-
-        <LensLogin />
-        
-      </header>
-      <main className="flex-grow overflow-y-auto">
-        <Outlet />
-      </main>
-      <footer className="text-center h-20 text-md text-stone-100">
-        <div className="flex shadow-lg rounded-lg mx-4 md:mx-auto border-2 max-w-md md:max-w-2xl ">
-          <button
-            onClick={() => navagate("/")}
-            className="w-full border-2 p-1 rounded text-gray-700 uppercase font-semibold text-lg hover:bg-gray-200"
-          >
-            home
-          </button>
-          <button
-            onClick={() => navagate("/post")}
-            className="w-full border-2 p-1 rounded text-gray-700 uppercase font-semibold text-lg hover:bg-gray-200"
-          >
-            post
-          </button>
-        </div>
-      </footer>
-    </div>
-  );
-};

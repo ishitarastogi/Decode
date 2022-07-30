@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Wallpoet&display=swap');
+
+ .code{
+text-decoration: none;
+font-size: 34px;
+font-family: 'Wallpoet', cursive;
+color: white;
+margin-right: 13px;
+}
+
+
+
+.navbar{
+
+  margin-top: 5px;
+height:10vh;
+background: black linear-gradient(#1d1e20, rgb(102, 60, 170));
+color: white;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.navbar-logo{
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.nav-items {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.nav-item a:hover {
+  background: rgb(43, 42, 92);
+}

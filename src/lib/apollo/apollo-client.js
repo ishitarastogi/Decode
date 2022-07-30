@@ -8,12 +8,12 @@ import {
   getAuthenticationToken,
   getRefreshToken,
   setAuthenticationToken,
-} from "../../../src/lib/apollo/auth/state";
+} from "./auth/state";
 import jwt_decode from "jwt-decode";
 
-import { refreshAuth } from "../../../src/GraphQl/auth/refresh";
-import { LENS_API_URL } from "../../constants";
-
+import { refreshAuth } from "../../api/authentication/refresh";
+// import { LENS_API_URL } from "../../constants";
+const LENS_API_URL = "https://api-mumbai.lens.dev/";
 // type decodedType = {
 //   exp: number;
 //   iat: number;
@@ -64,7 +64,19 @@ export const apolloClient = () => {
     link: authLink.concat(httpLink),
     uri: LENS_API_URL,
     cache: new InMemoryCache({
-
+      // typePolicies: {
+      //   Query: {
+      //     fields: {
+      //       explorePublications: lensPagination(["request", ["sortCriteria"]]),
+      //       publications: lensPagination([
+      //         "request",
+      //         ["profileId", "publicationTypes", "commentsOf"],
+      //       ]),
+      //       followers: lensPagination(["request", ["profileId"]]),
+      //       following: lensPagination(["request", ["address"]]),
+      //     },
+      //   },
+      // },
     }),
   });
   return apolloClient;

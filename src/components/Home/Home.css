@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Wallpoet&display=swap');
+
+.container {
+  background-image: url(../layout/img/image5.png);
+  background-size: cover;
+   background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-color: rgb(233, 232, 247);
+  display: flex;
+  opacity: 0.7;
+  flex-direction: row-reverse;
+      height: 40vh;
+
+}
+.container > .image {
+    height: 40vh;
+  flex: 1 0 0%;
+  float:left;/* and here*/
+}
+.image > img {
+  vertical-align:top;/* here */
+  max-width: 100%;
+  max-height: 300px;
+}
+.container > .text {
+ /* Sometimes it's better to leave something alone, to pause, and that's very true of programming." */
+
+position: absolute;
+width: 500px;
+height: 232px;
+left: 750px;
+top: 207px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 58px;
+
+color: #0e104b;
+
+
+  /* and eventually */
+  
+}
+.heading{
+font-size: 45px;
+color: #02031b;
+top: 190px;
+}
+.logo-heading{
+    top: 190px;
+text-align: left;    font-size: 45px;
+color: #02031b;
+
+    font-family: 'Wallpoet', cursive;
+
+}
+
+.grid {
+    margin-top:30px;
+    margin-left: 260px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.grid .text {
+  padding: 20px;
+}
+
+footer{
+    margin-top: 100px;
+    padding:100px;
+background: black linear-gradient(#1d1e20, rgb(102, 60, 170));}
+footer>div>h1{
+    margin-top:0px;
+        font-family: 'Wallpoet', cursive;
+font-size: 45px;
+}
+footer>div{
+    text-align: center;
+    color: white;
+}

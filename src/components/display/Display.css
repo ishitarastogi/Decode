@@ -1,0 +1,27 @@
+.second {
+  display: flex;
+  gap: 15px;
+}
+.second img {
+  border-radius: 50px;
+
+  border: solid rgbrgba(19, 9, 9, 0.65);
+}
+.mains {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 570px;
+  margin: auto;
+}
+.first {
+  padding: 15px;
+}
+.createdAt {
+  text-align: right;
+}
+.icon {
+  display: flex;
+  justify-content: space-around;
+  font-size: 22px;
+}

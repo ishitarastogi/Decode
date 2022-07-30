@@ -1,3 +1,97 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+  margin: 0;
+}
+
+
+/* Rectangle 1
+
+box-sizing: border-box;
+
+position: absolute;
+width: 4567px;
+height: 317.76px;
+left: 0px;
+top: 0px;
+
+background: #FAE7B8;
+
+
+/* Rectangle 4 */
+/* 
+position: absolute;
+width: 1157.61px;
+height: 2189px;
+left: 3409.39px;
+top: 0px;
+
+background: linear-gradient(180deg, #EAB326 0%, rgba(0, 0, 0, 0.14) 100%); */
+
+
+/* Login with lens */
+
+/* position: absolute;
+width: 627px;
+height: 103px;
+left: 238px;
+top: 138px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 85px;
+line-height: 103px; */
+/* identical to box height */
+
+/* color: #000000; */
+
+
+
+/* Group 2 */
+
+/* position: absolute;
+width: 730.6px;
+height: 215.73px;
+left: 3723px;
+top: 79px; */
+
+
+
+/* Group 1 */
+
+/* position: absolute;
+width: 730.6px;
+height: 215.73px;
+left: 3723px;
+top: 79px; */
+
+
+
+/* Rectangle 2 */
+
+/* position: absolute;
+width: 713.59px;
+height: 215.37px;
+left: 3723px;
+top: 79px;
+
+background: #E3AB3D;
+border-radius: 50px; */
+
+
+/* Connect Wallet */
+
+/* position: absolute;
+width: 695px;
+height: 157px;
+left: 3758.6px;
+top: 137.73px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 85px;
+line-height: 103px;
+
+color: #000000;
+ */
+ /* */ 
