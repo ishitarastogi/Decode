@@ -13,6 +13,15 @@ Collects allow creators to monetize their content. We have embbeded collect modu
 
 All the publications posted by creators uploaded on <a id="blob-path" href="https://docs.ipfs.tech/">IPFS</a>.
 
+## Project Components
+
+- Home: This is the Main page of our project which link you to the uploading Documents, project and video tutorial page.
+- Explore: This Page displays the all the contents posted by creators on our platform **Decode** .
+- Profile Icons: It contain three components:
+  - My Profile: This page displays the profile data which includes(cover picture, profile picture, Bio, content,stats and the publications posted)
+  - Create Profile: This page allows you to create Profile. It also has optional follow module.
+  - Logout
+
 ## Tech stack used 👾
 
 - ReactJs 
