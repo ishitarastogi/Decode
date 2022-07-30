@@ -1,7 +1,7 @@
 # <h1 align="center">Welcome to Decode 👩‍💻 </h1>
 
 ## Project Description 📜
-This project allows you to contribute to the community through documentation, video tutorials, and projects while being incentivised. It use the Lens protocol (Social media graph) to achieve our objectives. We used the Lens protocol's <a id="https://docs.lens.xyz/docs/follow">Follow Module</a> and <a id="blob-path" href="https://docs.lens.xyz/docs/collect">Collect Module</a> to monteitize our creator in best way possible.
+This project allows you to contribute to the community through documentation, video tutorials, and projects while being incentivised. It use the Lens protocol (Social media graph) to achieve our objectives. We used the Lens protocol's <a href="https://docs.lens.xyz/docs/follow">Follow Module</a> and <a id="blob-path" href="https://docs.lens.xyz/docs/collect">Collect Module</a> to monteitize our creator in best way possible.
 
 #### Follow Module 😎
 Follow NFT is give to user who follow a profile. In our project we have added **feeFollowModule** which allows creators to earn money when someone follows.
